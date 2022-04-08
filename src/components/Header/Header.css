@@ -5,7 +5,35 @@
     font-weight: 600;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
 .nav a:hover {
     color: goldenrod;
     transition: 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.logo {
+    width: 100px;
+    display: inline;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.logo-g {
+    width: 40px;
 }

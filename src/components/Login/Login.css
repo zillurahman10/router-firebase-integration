@@ -1,0 +1,24 @@
+.google-auth {
+    height: 55px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.g-logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.g {
+    display: flex;
+    justify-content: center;
+}
