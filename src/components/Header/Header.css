@@ -1,0 +1,11 @@
+.nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: goldenrod;
+    transition: 0.3s;
+}
