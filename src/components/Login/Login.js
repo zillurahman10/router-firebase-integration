@@ -6,7 +6,7 @@ const Login = () => {
     return (
         <div>
             <h1>Please Login</h1>
-            <form>
+            <div>
                 <input type="email" placeholder='Your email' />
                 <br />
                 <input type="password" name="" id="" placeholder='Your password' />
@@ -18,7 +18,7 @@ const Login = () => {
                         <p> Continue with Google </p>
                     </button>
                 </div>
-            </form>
+            </div>
         </div>
     );
 };

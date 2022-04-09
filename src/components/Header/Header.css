@@ -37,3 +37,21 @@ nav {
 .logo-g {
     width: 40px;
 }
+
+.img {
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+button {
+    color: black;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}

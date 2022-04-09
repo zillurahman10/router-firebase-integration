@@ -1,8 +1,11 @@
 import React from 'react';
 import './Header.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
+
+    const { user, handleSignOut } = useFirebase()
 
     function CustomLink({ children, to, ...props }) {
         let resolved = useResolvedPath(to);
@@ -32,7 +35,13 @@ const Header = () => {
                     <CustomLink to="/products">Products</CustomLink>
                     <CustomLink to="/orders">Orders</CustomLink>
                     <CustomLink to="/register">Register</CustomLink>
-                    <CustomLink to="/login">Login</CustomLink>
+                    {
+                        user?.uid ?
+                            <button onClick={handleSignOut}>Sign Out</button>
+                            :
+                            <CustomLink to="/login">Login</CustomLink>
+                    }
+                    <img className='img' src={user?.photoURL && user.photoURL} alt="" />
                 </div>
             </div>
         </div>
